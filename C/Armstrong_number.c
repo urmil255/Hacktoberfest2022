@@ -1,19 +1,22 @@
 #include<stdio.h>  
  int main()    
 {    
-int n,r,sum=0,temp;    
+int number;
+int r;
+int sum=0;
+int temp;    
 printf("enter the number=");    
-scanf("%d",&n);    
-temp=n;    
-while(n>0)    
+scanf("%d",&number);    
+temp=number;    
+while(number>0)    
 {    
-r=n%10;    
+r=number%10;    
 sum=sum+(r*r*r);    
-n=n/10;    
+number=number/10;    
 }    
 if(temp==sum)    
-printf("armstrong  number ");    
+printf("armstrong number ");    
 else    
-printf("not armstrong number");    
+printf("Number is not a armstrong number");    
 return 0;  
 } 
